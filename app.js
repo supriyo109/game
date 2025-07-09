@@ -17,7 +17,6 @@ let play= document.querySelector(".play");
 
 play.addEventListener("click", function() {
     if(start==false){
-        console.log("game start");
         start=true;
         score.innerText="Game Start";
         levelUp();
@@ -47,7 +46,6 @@ function levelUp(){
     let rendomBtn= document.querySelector(`.${rendomColor}`);
     gameFlashBtn(rendomBtn);
     gameSeq.push(rendomColor);
-    console.log(gameSeq);
 }
 
 function checkAns(idx){
